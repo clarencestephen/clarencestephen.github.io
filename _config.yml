@@ -1,0 +1,42 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Clarence Stephen
+description: > # this means to ignore newlines until "baseurl:"
+Rhode Island born, Florida raised, and a New Yorker for more than a decade; 
+I currently live in Brooklyn, NY with my wife and new born daughter. After studying 
+physics at Yale, I went on to pursue a career in finance at Morgan Stanley, and Tiger
+Global as a derivative trader, before studying at Metis to become a Data Scientist<br>
+  <a href="https://clarencestephen.github.io/">github</a>.<br>
+  Патчи, предложения и комментарии приветствуются.<br>
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://clarencestephen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+author: 'Clarence Stephen'
+  name: 'Clarence Stephen'
+  last_name: 'Stephen'
+  cv: 'https://www.linkedin.com/in/clarencestephen/'
+  avatar: '/images/avatar.jpg'
+  github_username:  clarencestephen  
+  email: clarence.stephen@gmail.com
+  vk_id: 
+  telegram_name:  
+  logo: '/images/avatar.jpg'
+
+# Build settings
+markdown: kramdown
+
+permalink: /:categories/:year/:title.html
