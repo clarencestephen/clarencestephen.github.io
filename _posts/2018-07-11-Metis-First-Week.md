@@ -1,7 +1,8 @@
-<!DOCTYPE HTML>
+
 ---
 layout: post
-title: My First Week At Metis
+title: 'Metis First Week'
+date: 2018-07-11
 ---
 <!--
 	Future Imperfect by HTML5 UP
