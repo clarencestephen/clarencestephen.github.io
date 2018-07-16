@@ -1,0 +1,161 @@
+
+<html>
+	<head>
+		<title>MTA Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="single">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+            <h1><a href="https://clarencestephen.github.io/">Clarence Stephen</a></h1>
+              <nav class="links">
+                <ul>
+                  <li><a href="about.html">About Me</a></li>
+                  <li><a href="Clarence_Stephen_Resume.pdf">Resume</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="all.html">Blog Archive</a></li>
+                  <li><a href="#linktolinks">Links</a></li>
+                </ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="https://clarencestephen.github.io/">
+											<h3>Home</h3>
+											<p>Main page</p>	
+										</a>
+									</li>
+									
+									<li>
+										<a href="Clarence_Stephen_Resume.pdf">
+											<h3>Resume</h3>
+											<p>Data Scientist & Investment Professional</p>	
+										</a>
+									</li>
+									
+                      							<li>
+										<a href="about.html">
+											<h3>About Me</h3>
+											<p> A few more details...</p>
+										</a>
+									</li>
+									<li>
+										<a href="all.html">
+											<h3>Archive</h3>
+											<p>Prior blog posts</p>
+										</a>
+									</li>
+									<li>
+										<a href="projects.html">
+											<h3>Projects</h3>
+											<p>Archival of projects</p>
+										</a>
+									</li>
+									<li>
+										<a href="#linktolinks">
+											<h3>Links</h3>
+											<p>Other sites of interest</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions vertical">
+									<li><a href="#" class="button big fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+<hr width="100%">
+
+
+										<h2><a href="#">MTA Project</a></h2>
+										<p>An analysis of MTA turnstile data</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2018-07-16">July 16, 2018</time>
+										<a href="#clarencestephen" class="author"><span class="name">Clarence Stephen</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<img src="images/mta.png" align="middle" alt="" width="1194" height="562" />
+								<br>
+								</div>
+									<i>TL;DR: An analysis of MTA turnstile data showed us that peak traffic occurs at Grand Central Mon-Fri between 4-8pm with particular concentration around control unit R238.</i>
+									<p><embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://clarencestephen.github.io/projects/MTA.pdf" width="500" height="375"></p>
+									<p>
+											  <p>Coming soon: #FinancialSingularity</p>
+
+                
+								<footer>
+	
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+							<ul class="icons">
+								<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+								<li><a href="mailto: Clarence.Stephen@gmail.com" class="fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							<p class="copyright">&copy; Cognosis. Images: <a href="http://unsplash.com" target="_blank">Unsplash</a>.</p>
+							</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
