@@ -22,15 +22,34 @@
 	<body class="single">
 	
 	<!-- facebook comments script -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
+
+	<!-- twitter initialization script -->
+			<script>window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "https://platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };
+
+		  return t;
+		}(document, "script", "twitter-wjs"));</script>
+		
 	
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -143,7 +162,12 @@
 									<div class="meta">
 										<time class="published" datetime="2018-07-27">July 27, 2018</time>
 										<a href="#clarencestephen" class="author"><span class="name">Clarence Stephen</span><img src="images/avatar.jpg" alt="" /></a>
-										<div class="fb-like" data-href="http://cognosis.solutions/2018-07-30_Financial_Singularity.html" data-width="250" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+						<!------------------Social share buttons-------------->										
+										<div class="fb-like" data-href="http://cognosis.solutions/2018-07-30_Financial_Singularity.html" data-width="200" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+										<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check this out!" data-via="clarencestephen" data-hashtags="DataScience" data-related="clarencestephen" data-lang="en" data-dnt="true" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+										
+
 									</div>
 								</header>
 								<img src="images/zucksorry.gif" align="middle" alt="" width="480" height="364" />
@@ -182,6 +206,7 @@
 
                 
 								<footer>
+
 								<div class="fb-comments" data-href="http://cognosis.solutions/2018-07-27_Facebook.html" data-width="750" data-numposts="5"></div>	
 								</footer>
 							</article>
