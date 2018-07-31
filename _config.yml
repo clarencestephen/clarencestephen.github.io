@@ -42,8 +42,13 @@ footer-links:
 disqus:
 
    comments: true
+       facebook:
+      appid : 
+      num_posts : 10
+      colorscheme: "light"
+      order_by : "reverse_time"
    comment: true
- provider: "staticman"
+ provider: "facebook"
    staticman:
  allowedFields          : ['name', 'email', 'url', 'message']
  branch                 : # "master", "gh-pages"
