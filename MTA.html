@@ -206,17 +206,39 @@
 									uniformed officers to cover those 5 million commuters and only a measely 4,000 (~10%) work as transit officers--that means on average
 									each officer deals with a transit incidence <b>EVERYDAY</b>.
 									</p><p>
-									Oh and this data by the way--and I do not intend this faceticiously: This is the ugliest daetaset I've seen to-date. I'd love to hear your horror stories but this is my first.
+									Oh and this data by the way--and I do not intend this faceticiously--is the ugliest dataset I've seen to-date. I'd love to hear your horror stories but this is my first.
 									As the saying goes, there's no such thing as a free lunch, and this project made me work for it. For starters, I took the negative turnstile counts, no doubt indicative
 									of improperly installed meters, and used their absolute value count, removed all significant outliers (~2%) using a reasonable threshold of 100k commuters per a turnstile in
 									a 4hr window of time. Missing values were backfilled as appropriate, using interpolation to ensure continuous, smooth distributions.
 									</p>
+									<p>Let explore the data...</p>
+									<p>The chart below shows the distribution of turnstile counts for the highest volume turnstiles around 42nd st/Grand Central/Times Square.
+										The outliers--highlighted in red--are extreme. It should be obvious, for example that Port Authority doesn't have 2B+ commuters ever.
 									<p><img src="images/timeperiod1484_922.png" alt="" width="800" height="497" /></p>
+									<p>After removing the outliers, the first goal is to determine which station has the highest traffic, tagging it at-risk. 
+										Grand Central wins with a fairly large margin:</p>
 									<p><img src="images/trafficvol1696_978.png" alt="" width="800" height="462" /></p>
-									<p><img src="images/trafficvol1676_1006.png" alt="" width="800" height="480" /></p>
-									<p><img src="images/trafficvol1610_990.png" alt="" width="800" height="492" /></p>
+									<p>Next, looking at traffic in Grand Central by weekday, we can determine which day is riskiest. Here Thursday appears to be the most popular day to commute with the weekend falling off dramatically, presumably as commuters from NJ/Long Island/etc.
+										return home for the weekend: </p>
 									<p><img src="images/trafficvol1760_1012.png" alt="" width="800" height="460" /></p>
+									<p> Finally we determine the distribution with respect to time so we can distribute the NYPD officers appropriately.
+										Commuters wane from 8pm to 4am and then the pace increases throughout the day dropping slightly during lunch
+										only to rally with the evening rush hour:
+									</p>
+									<p><img src="images/trafficvol1676_1006.png" alt="" width="800" height="480" /></p>
+									<p>So far we've determined that if an attack were to occur during peak traffic in NYC, it would occur at Grand Central on a Thursday during the evening rush hour.
+										I'm not quite satisfied with this data point. Grand Central is huge and it would still be a dramatic undertaking for a police force
+										to comb through all of Grand Central. We need to narrow this down further...
+									</p>
+									<p>Breaking down the data into individual Grand Central turnstiles reveals an unusual result. Below is a heat-map where red-shading represents heavier traffic:</p>
+									<p><img src="images/trafficvol1610_990.png" alt="" width="800" height="492" /></p>
+									<p>It seems one turnstile gets an inordinate amount of traffic in Grand Central. If I were to take a guess, I suppose this is the turnstile adjacent to the
+										escalators from the subway into Grand Central. This also makes it clear that there are asymmetric risks posed by the current layout.
+										Its in the best interest of commuters, the NYPD, MTA, and New Yorkers to redistribute traffic flow in Grand Central. This would increase safety precautions
+										and allow commuters to travel more efficiently. An immediate consideration perhaps, would be to post additional officers until resolved.
+									</p>
 									<p></p>
+									<p>Associated presentation slides:</p>
 									<p><embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://clarencestephen.github.io/projects/MTA.pdf" align = "middle" width="1000" height="750"></p>
 									</div>
 											  <p>Coming soon: #FinancialSingularity</p>
