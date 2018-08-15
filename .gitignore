@@ -1,0 +1,7 @@
+#ignore folders
+.ipynb_checkpoints/
+
+#ignore files
+.DS_Store
+
+#ignore extension
