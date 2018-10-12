@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="meta">
-                        <time class="published" datetime="2018-10-01">October 1, 2018</time>
+                        <time class="published" datetime="2018-10-01">October 12, 2018</time>
                         <a href="about.html" class="author"><span class="name">Clarence Stephen</span><img src="images/avatar.jpg"
                                 alt="" /></a>
 
@@ -198,21 +198,22 @@
                     <p><i>
                             Analyzed influence of GameStop's review scores on EA stock performance using a polynomial
                             regression
-                            model and obtained R^2 value of 0.954. (BeautifulSoup, Selenium, StatsModels, Scikit-Learn)
+                            model and obtained R^2 value of 0.976. (BeautifulSoup, Selenium, StatsModels, Scikit-Learn)
                         </i></p>
                     <p>For GameStop…the struggle is real. Leadership issues, the growth of mobile and social gaming ,
                         online-shopping, and the rising popularity of digital downloads and DLCs (downloadable content)
                         have proved to be heavy headwinds for this struggling retailer whose linchpin is selling
                         physical, used-games. In contrast, EA has been a tremendous success story <a href=https://www.nasdaq.com/article/electronic-arts-and-the-star-wars-in-game-purchase-fiasco-cm880866>
-                            <font style='color:red'>(in-game purchases aside)</font></a> riding the eSports waves to the very top and delivering
-                            consistent success with their franchise titles (Madden, FIFA, Mass Effect, Battlefield, et
-                            al.).</p> 
-                            <p><img src="images/GME_EA/4.png" alt="" style="width:100%" /></p>
-                            <p>This year has been tough for GameStop…In May, Former CEO Michael Mauler
-                            resigned after only 3 months on the job (he replaced J. Paul Raines who had served as CEO
-                            since 2010 and passed away in March). A few days after naming Mauler as CEO, GameStop fired
-                            its COO and its executive VP of strategic business and brand development. Never a good
-                            sign…</p>
+                            <font style='color:red'>(in-game purchases aside)</font></a> riding the eSports waves to
+                        the very top and delivering
+                        consistent success with their franchise titles (Madden, FIFA, Mass Effect, Battlefield, et
+                        al.).</p>
+                    <p><img src="images/GME_EA/4.png" alt="" style="width:100%" /></p>
+                    <p>This year has been tough for GameStop…In May, Former CEO Michael Mauler
+                        resigned after only 3 months on the job (he replaced J. Paul Raines who had served as CEO
+                        since 2010 and passed away in March). A few days after naming Mauler as CEO, GameStop fired
+                        its COO and its executive VP of strategic business and brand development. Never a good
+                        sign…</p>
                     <p>If you’ve ever been inside a GameStop, you are probably well aware of Game Informer, a gaming
                         publication with total circulation of ~7m and over 300 issues across almost 30 years—indeed,
                         their influence is apparent. But there is a somewhat subtle issue at hand: <i><b> the retailer
@@ -222,51 +223,112 @@
                     <p>Game Informer provides its readers with a reliable source of hype—ahem—I mean previews, reviews,
                         industry rumors, and news. The real issue lies in the review scores:</p>
                     <p><img src="images/GME_EA/1.png" alt="" style="width:100%" /></p>
-                    <p>The chart above shows the distribution of all Game Informer review scores since 1994. The scores are clustered
-                        around 8 and skewed highly to the left. The kernel density estimation (KDE) line suggest all games are likely to be highly rated. Are all games that good? Perhaps, this score-inflation is a result of the technological and artistic
+                    <p>The chart above shows the distribution of all Game Informer review scores since 1994. The scores
+                        are clustered
+                        around 8 and skewed highly to the left. The kernel density estimation (KDE) line suggest all
+                        games are likely to be highly rated. Are all games that good? Perhaps, this score-inflation is
+                        a result of the technological and artistic
                         advancement of the gaming industry and the current state of high-quality of games?</p>
                     <p><img src="images/GME_EA/2.png" alt="" style="width:100%" /></p>
-                    <p>The dot-plot above shows how consistent this heavy skew towards high scores has been since 1994. If anything the
-                        variance of scores has tightened more recently (fewer dots in lower right-hand region), exacerbating any bias. To be clear: GameStop’s ultimate goal is to sell video
-                        games; if they tell you every game is great, perhaps the assumption is that you’ll be more likely to buy a video
+                    <p>The dot-plot above shows how consistent this heavy skew towards high scores has been since 1994.
+                        If anything the
+                        variance of scores has tightened more recently (fewer dots in lower right-hand region),
+                        exacerbating any bias. To be clear: GameStop’s ultimate goal is to sell video
+                        games; if they tell you every game is great, perhaps the assumption is that you’ll be more
+                        likely to buy a video
                         game from them.</p>
-                    <p>Is this really where you should be go for game reviews? Is Game Informer a reliable source for honest, unbiased
+                    <p>Is this really where you should be go for game reviews? Is Game Informer a reliable source for
+                        honest, unbiased
                         reviews or is it just a proxy for Gamestop's advertising?
-                        This consistent skew towards high review scores over 25 years should give us a reason to be suspicious. And EA's review
+                        This consistent skew towards high review scores over 25 years should give us a reason to be
+                        suspicious. And EA's review
                         scores appear to be no exception to the trend:</p>
                     <p><img src="images/GME_EA/3.png" alt="" style="width:100%" /></p>
-                    <p>In order to investigate these trends further, I employed webscraping to obtain the review score data and used
+                    <p>In order to investigate these trends further, I employed webscraping to obtain the review score
+                        data and used
                         StatsModels and Scikit-Learn to build an evaluate the regression models.</p>
                     <p><img src="images/GME_EA/5.png" alt="" style="width:100%" /></p>
                     <p>Let's explore the data further...</p>
                     <p><img src="images/GME_EA/6.png" alt="" style="width:100%" /></p>
-                    <p>The chart above shows the distribution of EA stock returns, relative to the S&P500, 7 days after a review is
-                        published for one of their games. As the (weak) trend line suggests, EA stock tends to perform better after higher review scores. 
-                        And as one might expect, scores of 6 or lower have some outsized negative returns. But the issue still 
+                    <p>The chart above shows the distribution of EA stock returns, relative to the S&P500, 7 days after
+                        a review is
+                        published for one of their games. As the (weak) trend line suggests, EA stock tends to perform
+                        better after higher review scores.
+                        And as one might expect, scores of 6 or lower have some outsized negative returns. But the
+                        issue still
                         remains at the higher end, with a dense cluster of high scores and less-correlated returns.</p>
                     <p>In contrast, the distribution of the target variable (EA stock returns) appears very normal:</p>
                     <p><img src="images/GME_EA/7.png" alt="" style="width:100%" /></p>
-                    <p>Recent years indicate tighter returns (lower volatility) around weekly reviews:</p>
+                    <p>And recent years indicate tighter returns (lower volatility) around weekly reviews:</p>
                     <p><img src="images/GME_EA/8.png" alt="" style="width:100%" /></p>
                     <p>This trend holds for a wider return period as well (30 days):</p>
                     <p><img src="images/GME_EA/9.png" alt="" style="width:100%" /></p>
-                    <p>The next two charts may seem silly, but are a necessary part of feature selection for modeling. 
-                        The first shows that today's stock price is an essential input for predicting forward prices (future prices). 
-                        This is a critical component of modeling as historical closing prices are a necessary input for future predictions.</p>
+                    <p>But we want to understand how much of this stock behavior is influenced by Game Informer
+                        reviews. To that end,
+                        the most important and perhaps obvious component to include in our model feature-selection is
+                        today's stock price.
+                    </p>
                     <p><img src="images/GME_EA/10.png" alt="" style="width:100%" /></p>
-                    <p>This second chart shows the correlation coefficients for 7 and 30 day returns vs today's stock price, confirming base-line assumptions:</p>
-                    <p><img src="images/GME_EA/11.png" alt="" style="width:100%" /></p>
+                    <p>The chart above shows the strong linear relationship between today's closing price and the 7-day
+                        forward price (correlation coefficient of 0.99609).
+                        This holds true for the 30-day forward price as well (correlation coefficient of 0.98605),
+                        confirming our base-line assumptions.
+                        Having applied the train-test-split process to the data, and using closing prices and 7-day
+                        forward prices as initial inputs
+                        for a simple linear regression yields an R^2 value of 0.972 as baseline.</p>
                     <p><img src="images/GME_EA/12.png" alt="" style="width:100%" /></p>
+                    <p>From the baseline model, adding additional features including the review scores, takes R^2 down
+                        to 0.970.
+                        This should not be a surprise as the additional features 'dilute' the aforementioned linear
+                        relationship between
+                        closing and future pricing as well as introducing some noise from features such as trading
+                        volumes. However, this linear model applies
+                        a coefficient of -0.15 to review scores. This direction and magnitude suggest the relationship
+                        between the review scores
+                        and the 7 day stock returns may not be linear (or that the review scores have a tiny negative
+                        impact),
+                        and thus a polynomial regression yeilds a better fit at R^2 0.976.
+                    </p>
                     <p><img src="images/GME_EA/13.png" alt="" style="width:100%" /></p>
-                    <p><img src="images/GME_EA/14.png" alt="" style="width:100%" /></p>
-                    <p><img src="images/GME_EA/15.png" alt="" style="width:100%" /></p>
+                    <p>Examining the model more closely, we can observe some heteroskedasticity at the lower range of
+                        closing prices up until $40.
+                        Those prices correspond with where EA stock traded before 2014. Recall, this period also
+                        represents higher volatility in
+                        the underlying stock. So appropriately, as stock volatility decreased the model is able to make
+                        better predictions (proportionally lower residuals) at higher prices.
+                        Residuals remain around +/- $5 above $40 so with EA stock currently trading ~$105, thats not
+                        terrible accuracy.
+                    </p>
                     <p><img src="images/GME_EA/16.png" alt="" style="width:100%" /></p>
+                    <p> EA stock is up nearly 500% since 2013. So what happened at EA? What led to lower volatility and
+                        higher prices? Certainly nothing had changed with regard
+                        to the pattern of their game review scores, as shown in the early charts.
+                    </p>
                     <p><img src="images/GME_EA/17.png" alt="" style="width:100%" /></p>
-                    <p><img src="images/GME_EA/18.png" alt="" style="width:100%" /></p>
+                    <p>Andrew Wilson happened. Six months after the resignation of John Riccitiello, Andrew Wilson was
+                        chosen to be the new CEO of EA on September 17, 2013.
+                        His leadership led to increased profitability and reduced stock volatility. Andrew Wilson had
+                        been head of EA sports and took the CEO helm amid
+                        a leadership shakeup and mass layoffs. He came off the heels of success with Madden & FIFA and
+                        brought his vision to the entire company.
+                    </p>
+                    <p>But back to our model...</p>
+                    <p>The influence of Game Informer review scores on EA stock price seems small at first. Recall adding this feature improved on the baseline linear
+                        model with R^2 0.972 by only 0.004, with the polynomial regression scoring 0.976. But the influence is there! 
+                        Looking at "the best" vs "the worst" scores...scores below 5 had an average 7 day return of -3%, where as scores of 9 or better returned +1%.</p>
                     <p><img src="images/GME_EA/19.png" alt="" style="width:100%" /></p>
-                    
+                    <p>Digging a little deeper into the best and worst EA stock returns we can see the best performers had scores skewed towards 8+ (avg 7.8 review score). 
+                        Conversely, for the worst performers, scores were skewed sub 8 (avg 7.3) with some of the worst reviews in this group (Tiger Woods 99 scored 2!).
+                    </p>
+                    <p>The primary purpose of this project was to deploy large-scale webscraping and implement the data in an autoregressive model. Having accomplished this purpose, 
+                        I will stop short of any grandiose conclusions with regards to Game Informer reviews. The influence is apparent albeit small and--full disclosure--I am
+                        a subscriber to this magazine. I read it for entertainment not review scores. And at least with EA, it should be safe to say the stock performs mostly
+                        on the overall quality of its game offerings, rather than the influence of individual reviews.
+                    </p>
+
                     <p>If you'd like to dig deeper into the code:</p>
-                    <p><a href ="https://github.com/clarencestephen/GME-vs-EA" style = "color:blue">GME vs EA - GitHub Repository</a></p>
+                    <p><a href="https://github.com/clarencestephen/GME-vs-EA" style="color:blue">GME vs EA - GitHub
+                            Repository</a></p>
                     <p>Coming soon: #RecessionPredictiveModel</p>
                 </div>
 
